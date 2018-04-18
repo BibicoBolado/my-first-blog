@@ -3,5 +3,6 @@ from .import views
 
 app_name='blog'
 urlpatterns=[
-	path('',views.home,name='home')
+	path('',views.home,name='home'),
+	path('<slug:slug>/',views.post,name='post'),
 ]

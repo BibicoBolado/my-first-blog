@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,get_object_or_404
 from django.http import HttpResponse
 from django.utils import timezone
 
@@ -11,4 +11,11 @@ def home(request):
 	template_name='blog/post_list.html'
 	context={}
 	context['posts']=posts
+	return render (request,template_name,context)
+
+def post(request,slug):
+	post=get_object_or_404(Post,slug=slug)
+	template_name='blog/postagem.html'
+	context={}
+	context['post']=post
 	return render (request,template_name,context)
