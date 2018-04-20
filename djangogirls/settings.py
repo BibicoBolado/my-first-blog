@@ -120,3 +120,12 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT= os.path.join(BASE_DIR, 'static')
+
+
+#arquivos de MEDIA são arquivos de modelos
+#Media Root é onde os arquivos vão ficar
+#O upload_to do model fica concatenado com o Media_Root
+#URL_MEDIA é a url base para os arquivos de media (upload usuario)
+MEDIA_ROOT=os.path.join(BASE_DIR,'my-first-blog','media')
+
+MEDIA_URL='/media/'
