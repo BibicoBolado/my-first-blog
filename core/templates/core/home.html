@@ -1,6 +1,32 @@
-{% extends 'blog/base.html' %}
+{% extends 'core/base.html' %}
 {% block content %}
 {%load staticfiles%}
+
+<head>
+	
+	<link rel="stylesheet" href="{% static 'css/core.css' %}">
+  
+  <title>Rita Romão </title>
+</head>
+<div class="row">
+  <div class="column">
+    <h2>Noticias Sobre Magé</h2>
+    <p>No Blog da Rita Romão você vai poder acompanhar de perto tudo que está acontecendo na Cidade de Magé:.
+      <li>Eventos</li>
+      <li>Encontros</li>
+      <li>Denuncias</li>
+    </p>
+  </div>
+  <div class="column">
+    <h2>Política Mageense</h2>
+
+    <p>Semanalmente será postado um panorama sobre oue está acontecendo e traremos dados e informações dos politicos que representam nossa cidade.</p>
+  </div>
+  <div class="column">
+    <h2>Dia a Dia da População</h2>
+    <p>Estaremos recebendo postagens que estejam de acordo com as regras do Blog e publicando em nossa lista, envie um email de contato para solicitar as regras.</p>
+  </div>
+</div>
 
 
 {% endblock %}

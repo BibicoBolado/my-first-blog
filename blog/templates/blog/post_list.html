@@ -2,7 +2,13 @@
 {% extends 'blog/base.html' %}
 {% block content %}
 {%load staticfiles%}
-<head><title>Studio <echo> </title></head>
+<head>
+
+    <title>Studio <echo> </title>
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+
+
+</head>
 {% for post in posts %}
     <div class="content">
         <div class="pure-g-r content-ribbon">

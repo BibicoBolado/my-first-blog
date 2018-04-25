@@ -1,6 +1,12 @@
 {% extends 'blog/base.html' %}
 {% block content %}
-<head><title>{{post.title}} </title></head>
+{%load staticfiles%}
+<head>
+
+<title>{{post.title}} </title>
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+
+</head>
 <div class="content container">
 <h1>{{post.title}}</h1>
 
