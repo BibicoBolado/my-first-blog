@@ -11,9 +11,9 @@
                     <a href="{% url 'blog:post' post.slug %}">
 
                         {%if post.image%}
-                        <img src="{{post.image.url}}" alt="{{post.title}}" style="width:420px;height:300px;">
+                        <img src="{{post.image.url}}" alt="{{post.title}}" style="width:320px;height:300px;">
                         {%else%}
-                        <img src="{% static 'img/floresta.jpg' %}" alt="{{post.title}}" style="width:420px;height:300px;">
+                        <img src="{% static 'img/floresta.jpg' %}" alt="{{post.title}}" style="width:320px;height:300px;">
                         {% endif %}
 
                     </a>
